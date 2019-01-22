@@ -3,7 +3,7 @@ class Enonic < Formula
   homepage "http://enonic.com/"
   url "http://repo.enonic.com/public/com/enonic/cli/enonic/0.1.11/"
   version "0.1.11"
-  sha256 "172b7f0edd2bdb20a406f2e8759b09ca884883ac3c7ce43d68a332f7c6a2c3cb"
+  sha256 "f8e795004645e75d7c605369401d00352dd569337b14994166e2bd1a43daf15d"
 
   def install
     bin.install "enonic"
