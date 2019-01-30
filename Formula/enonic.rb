@@ -3,7 +3,7 @@ class Enonic < Formula
   homepage "http://enonic.com/"
   url "http://repo.enonic.com/public/com/enonic/cli/enonic/0.2.2/enonic_0.2.2_Mac_64-bit.tar.gz"
   version "0.2.2"
-  sha256 "fc9414159437dee663a5615d455b2763e53ddd4f4f2453c9213fd73698fc5e22"
+  sha256 "7ec64a5b8ed0c10b9826792136c385754e67b9448cf42522b6a885ac467ce987"
 
   def install
     bin.install "enonic"
