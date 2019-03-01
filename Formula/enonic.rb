@@ -2,9 +2,9 @@
 class Enonic < Formula
   desc "Command-line interface for Enonic XP"
   homepage "https://enonic.com/"
-  url "https://repo.enonic.com/public/com/enonic/cli/enonic/0.5.1/enonic_0.5.1_Mac_64-bit.tar.gz"
-  version "0.5.1"
-  sha256 "4cf590904676d4dcea5b28ded1c39c8f648aa1f0c0d6fc86c5220261bfb77dbe"
+  url "https://repo.enonic.com/public/com/enonic/cli/enonic/0.5.2/enonic_0.5.2_Mac_64-bit.tar.gz"
+  version "0.5.2"
+  sha256 "9fc7d22c8246e9fa2dc10e33fc33a7ab7405d66332caedbd0eb7d2e84a061a1d"
 
   def install
     bin.install "enonic"
