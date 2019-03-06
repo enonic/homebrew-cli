@@ -5,11 +5,10 @@ class Enonic < Formula
       :tag      => "0.5.2",
       :revision => "f1062c696e7e9c254b62f10fb6a821e1dbe07c3c"
 
-# Need to find out what we do with this bottling:
-#  bottle do
-#    cellar :any_skip_relocation
-#    sha256 "4cf590904676d4dcea5b28ded1c39c8f648aa1f0c0d6fc86c5220261bfb77dbe"
-#  end
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "e9729439e5423ab6861068cd2b85d658a67c2b8b403c7c0e306bfd3c8bd45825" => :mojave
+  end
 
   depends_on "go" => :build
 
