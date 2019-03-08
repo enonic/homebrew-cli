@@ -2,8 +2,8 @@ class Enonic < Formula
   desc "Command-line interface for Enonic XP"
   homepage "https://enonic.com/"
   url "https://github.com/enonic/enonic-cli.git",
-      :tag      => "0.5.2",
-      :revision => "f1062c696e7e9c254b62f10fb6a821e1dbe07c3c"
+      :tag      => "0.5.3",
+      :revision => "cf4753abe2ee6510305c78b37af7b0613496c513"
 
   depends_on "go" => :build
 
