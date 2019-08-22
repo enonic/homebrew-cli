@@ -7,11 +7,11 @@ class Enonic < Formula
 
   if OS.mac?
     url "https://repo.enonic.com/public/com/enonic/cli/enonic/1.0.12/enonic_1.0.12_Mac_64-bit.tar.gz"
-    sha256 "0bc0ff4603c93d7c467ea3d2240a7c351d32412c6fd0e426c64be923539df915"
+    sha256 "25847bceebeab22c9745e590711d719a1980a0ebfc45ec1c5835b36634272552"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://repo.enonic.com/public/com/enonic/cli/enonic/1.0.12/enonic_1.0.12_Linux_64-bit.tar.gz"
-      sha256 "d23c26a8f2a1a026ddbe808862b1a898d6cce12b65478f94991d201592a82d44"
+      sha256 "b0694b476ac3a22221f7e6156e2f5a6d8434823755dfdc06e76a3ad217fc2320"
     end
   end
 
