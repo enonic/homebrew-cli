@@ -2,16 +2,16 @@
 class Enonic < Formula
   desc "Command-line interface for Enonic XP"
   homepage "https://enonic.com/"
-  version "1.4.0"
+  version "1.5.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://repo.enonic.com/public/com/enonic/cli/enonic/1.4.0/enonic_1.4.0_Mac_64-bit.tar.gz"
-    sha256 "7cda5a39fbdd894457c55f5aa0540d6532f2a4c4e472225e74090affd9ba560c"
+    url "https://repo.enonic.com/public/com/enonic/cli/enonic/1.5.0/enonic_1.5.0_Mac_64-bit.tar.gz"
+    sha256 "2fef56e6aa273ab5439c03a8d4266fc5f696fc348c12056d0a855c572f8d6465"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://repo.enonic.com/public/com/enonic/cli/enonic/1.4.0/enonic_1.4.0_Linux_64-bit.tar.gz"
-      sha256 "27a6ddf1c9df57a0812d2ec93915377395cf85506fcfd81ca947b79c3f75afb7"
+      url "https://repo.enonic.com/public/com/enonic/cli/enonic/1.5.0/enonic_1.5.0_Linux_64-bit.tar.gz"
+      sha256 "91fc05c22ff9331e747f4df856ce037ad7d8f769bb256e9be6514d70c9c17b8e"
     end
   end
 
