@@ -8,21 +8,30 @@ class Enonic < Formula
   version "2.1.0"
   bottle :unneeded
 
-  if OS.mac?
-    url "https://repo.enonic.com/public/com/enonic/cli/enonic/2.1.0/enonic_2.1.0_Mac_64-bit.tar.gz"
-    sha256 "6b83a2e904989e35a2e8227dd283fd2f5ffe5e6af09f24719324ef80d77ceb10"
+  on_macos do
+    if Hardware::CPU.intel?
+      url "https://repo.enonic.com/public/com/enonic/cli/enonic/2.1.0/enonic_2.1.0_Mac_64-bit.tar.gz"
+      sha256 "bf2a3ab3316e74dfd463074b9629e07653656bf9c4f1850f7f3afd1abada3d30"
+    end
+    if Hardware::CPU.arm?
+      url "https://repo.enonic.com/public/com/enonic/cli/enonic/2.1.0/enonic_2.1.0_Mac_Arm64.tar.gz"
+      sha256 "708c218f87e83288f5ed1b1b4ebd55e0388923e85627a2cbce47ead562296702"
+    end
   end
-  if OS.linux? && Hardware::CPU.intel?
-    url "https://repo.enonic.com/public/com/enonic/cli/enonic/2.1.0/enonic_2.1.0_Linux_64-bit.tar.gz"
-    sha256 "a4791a3caef0d87f898e0058a1f1fb3b4467224effc4da561e100ca23da1fef2"
-  end
-  if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://repo.enonic.com/public/com/enonic/cli/enonic/2.1.0/enonic_2.1.0_Linux_armv6.tar.gz"
-    sha256 "a07ce1232d46832e77c23020bfa2ae3492470c05de6fc0acd2a8704f13b579bf"
-  end
-  if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://repo.enonic.com/public/com/enonic/cli/enonic/2.1.0/enonic_2.1.0_Linux_arm64.tar.gz"
-    sha256 "f04ced4d499120ff7b5d0a7900830c13df50755f21028470d1845b7260967fd2"
+
+  on_linux do
+    if Hardware::CPU.intel?
+      url "https://repo.enonic.com/public/com/enonic/cli/enonic/2.1.0/enonic_2.1.0_Linux_64-bit.tar.gz"
+      sha256 "1f4a6ab711f6ed33546852be0b37de9f8ff4a6244e17505ceb1e68b51a6244f8"
+    end
+    if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
+      url "https://repo.enonic.com/public/com/enonic/cli/enonic/2.1.0/enonic_2.1.0_Linux_Armv6.tar.gz"
+      sha256 "02ec91306bb0dac63af99c02a5457e0653e39ef1f31d0234a935e0893e19b522"
+    end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://repo.enonic.com/public/com/enonic/cli/enonic/2.1.0/enonic_2.1.0_Linux_Arm64.tar.gz"
+      sha256 "583c73f757fc4c06234741668ea9a004dc97aaf2d1dcde7f1185ee0f1743ce60"
+    end
   end
 
   def install
