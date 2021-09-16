@@ -5,32 +5,32 @@
 class Enonic < Formula
   desc "Command-line interface for Enonic XP"
   homepage "https://enonic.com/"
-  version "2.1.0"
+  version "2.1.1"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://repo.enonic.com/public/com/enonic/cli/enonic/2.1.0/enonic_2.1.0_Mac_64-bit.tar.gz"
-      sha256 "bf2a3ab3316e74dfd463074b9629e07653656bf9c4f1850f7f3afd1abada3d30"
+      url "https://repo.enonic.com/public/com/enonic/cli/enonic/2.1.1/enonic_2.1.1_Mac_64-bit.tar.gz"
+      sha256 "e51926826279acbd44d7071fe7b8c229c0432ad95bf0644044a54e272ee00e15"
     end
     if Hardware::CPU.arm?
-      url "https://repo.enonic.com/public/com/enonic/cli/enonic/2.1.0/enonic_2.1.0_Mac_Arm64.tar.gz"
-      sha256 "708c218f87e83288f5ed1b1b4ebd55e0388923e85627a2cbce47ead562296702"
+      url "https://repo.enonic.com/public/com/enonic/cli/enonic/2.1.1/enonic_2.1.1_Mac_Arm64.tar.gz"
+      sha256 "5c63abdf748712c1bcfb875c59cf97bc87c1a903b1ba882ae1733b67bdb59ec3"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://repo.enonic.com/public/com/enonic/cli/enonic/2.1.0/enonic_2.1.0_Linux_64-bit.tar.gz"
-      sha256 "1f4a6ab711f6ed33546852be0b37de9f8ff4a6244e17505ceb1e68b51a6244f8"
+      url "https://repo.enonic.com/public/com/enonic/cli/enonic/2.1.1/enonic_2.1.1_Linux_64-bit.tar.gz"
+      sha256 "6a08651564ed46809d53a630cfb852b449b8a13e423f8949bfdb991195527b77"
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://repo.enonic.com/public/com/enonic/cli/enonic/2.1.0/enonic_2.1.0_Linux_Armv6.tar.gz"
-      sha256 "02ec91306bb0dac63af99c02a5457e0653e39ef1f31d0234a935e0893e19b522"
+      url "https://repo.enonic.com/public/com/enonic/cli/enonic/2.1.1/enonic_2.1.1_Linux_Armv6.tar.gz"
+      sha256 "c1b335fae600dc952ef222ae96300993df95755f9ba5d0f42fb4f044a2977752"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://repo.enonic.com/public/com/enonic/cli/enonic/2.1.0/enonic_2.1.0_Linux_Arm64.tar.gz"
-      sha256 "583c73f757fc4c06234741668ea9a004dc97aaf2d1dcde7f1185ee0f1743ce60"
+      url "https://repo.enonic.com/public/com/enonic/cli/enonic/2.1.1/enonic_2.1.1_Linux_Arm64.tar.gz"
+      sha256 "7a13f86dd12fa1779d9f75434f9a227ef6989f0d4cabed3916e6ee4fd3870ec0"
     end
   end
 
