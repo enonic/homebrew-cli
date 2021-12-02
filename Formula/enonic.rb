@@ -6,7 +6,6 @@ class Enonic < Formula
   desc "Command-line interface for Enonic XP"
   homepage "https://enonic.com/"
   version "2.2.0"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
