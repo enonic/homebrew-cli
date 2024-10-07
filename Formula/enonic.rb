@@ -5,20 +5,20 @@
 class Enonic < Formula
   desc "Command-line interface for Enonic XP"
   homepage "https://enonic.com/"
-  version "3.1.1"
+  version "3.1.3"
 
   on_macos do
     on_intel do
-      url "https://repo.enonic.com/public/com/enonic/cli/enonic/3.1.1/enonic_3.1.1_Darwin_64-bit.tar.gz"
-      sha256 "4f574c9355e61a15b55f8811557504da6231ae3ed003e3b4d7c055184c7ed896"
+      url "https://repo.enonic.com/public/com/enonic/cli/enonic/3.1.3/enonic_3.1.3_Darwin_64-bit.tar.gz"
+      sha256 "61f3d905e12d100c9b0ba2aef5182b5b097da393436c1aa4339ba8c53613fa88"
 
       def install
         bin.install "enonic"
       end
     end
     on_arm do
-      url "https://repo.enonic.com/public/com/enonic/cli/enonic/3.1.1/enonic_3.1.1_Darwin_arm64.tar.gz"
-      sha256 "5504e96b5252379d4bf9fbde94130612989d2a39ffd1e3d2b429ca99e8b49f9a"
+      url "https://repo.enonic.com/public/com/enonic/cli/enonic/3.1.3/enonic_3.1.3_Darwin_arm64.tar.gz"
+      sha256 "b8f8f05333b784c43f1d54c524352265b15febe4e24511fe8506d4c65858b5d5"
 
       def install
         bin.install "enonic"
@@ -29,8 +29,8 @@ class Enonic < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://repo.enonic.com/public/com/enonic/cli/enonic/3.1.1/enonic_3.1.1_Linux_64-bit.tar.gz"
-        sha256 "58d471c4ed5051d856655ece3c023ebabd79c48da9cb95e2c6f0b0f0afabe4ba"
+        url "https://repo.enonic.com/public/com/enonic/cli/enonic/3.1.3/enonic_3.1.3_Linux_64-bit.tar.gz"
+        sha256 "e83a74cf5ef7d7a356c5bdb4fea961c4e26530e3649e2edc78e05fd34d323371"
 
         def install
           bin.install "enonic"
@@ -39,8 +39,8 @@ class Enonic < Formula
     end
     on_arm do
       if !Hardware::CPU.is_64_bit?
-        url "https://repo.enonic.com/public/com/enonic/cli/enonic/3.1.1/enonic_3.1.1_Linux_arm_v6.tar.gz"
-        sha256 "bf4c8d331b196653457b5ebf3e7cf325600dcfe7b44f585e3312e01567709450"
+        url "https://repo.enonic.com/public/com/enonic/cli/enonic/3.1.3/enonic_3.1.3_Linux_arm_v6.tar.gz"
+        sha256 "f26d18f0e63953281e175e71ea254e7af92fd6915556d575042a4eb923f7fa91"
 
         def install
           bin.install "enonic"
@@ -49,8 +49,8 @@ class Enonic < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://repo.enonic.com/public/com/enonic/cli/enonic/3.1.1/enonic_3.1.1_Linux_arm64.tar.gz"
-        sha256 "5f85b44224e8048b454e731d7d292d0589560f911900c74ebf38639bd0b76b43"
+        url "https://repo.enonic.com/public/com/enonic/cli/enonic/3.1.3/enonic_3.1.3_Linux_arm64.tar.gz"
+        sha256 "7655058c245bc2be28d31925a8b9dabf184a8e7edf69e8b2a16695b3f3b9b9aa"
 
         def install
           bin.install "enonic"
