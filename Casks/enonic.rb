@@ -15,12 +15,12 @@ cask "enonic" do
     on_intel do
       url "https://repo.enonic.com/public/com/enonic/cli/enonic/#{version}/enonic_#{version}_Darwin_64-bit.tar.gz",
         verified: "https://repo.enonic.com"
-      sha256 "0c0d6f89dabbbdc99d5c7a1996976165d3f39d7580d2c7835cd399b4319121d1"
+      sha256 "1c95dbcb54a87c0cbdc64b30e0d355adb0b69afea20026600eec792088bce15a"
     end
     on_arm do
       url "https://repo.enonic.com/public/com/enonic/cli/enonic/#{version}/enonic_#{version}_Darwin_arm64.tar.gz",
         verified: "https://repo.enonic.com"
-      sha256 "ed26840f56690ceb0eba137e15bcd19b0e9e09cde4da25ca210b0786d7eb25d6"
+      sha256 "f55d65f8449fd85bb5a1e521fceefa1b974bfc754ab7567c2c01c5df7a4efbbd"
     end
   end
 
@@ -28,12 +28,12 @@ cask "enonic" do
     on_intel do
       url "https://repo.enonic.com/public/com/enonic/cli/enonic/#{version}/enonic_#{version}_Linux_64-bit.tar.gz",
         verified: "https://repo.enonic.com"
-      sha256 "280fce46d59c2bafa6f3fd88d12dfbce0b261af4e27f5705260f24215416f550"
+      sha256 "86cd1aab6b1735a6ece8ca159c2114846b1dca79fb805ce446c26d682754e4b1"
     end
     on_arm do
       url "https://repo.enonic.com/public/com/enonic/cli/enonic/#{version}/enonic_#{version}_Linux_arm64.tar.gz",
         verified: "https://repo.enonic.com"
-      sha256 "d56f9b43e29b662eaa679f19164b66bb89cb84038c97322cb5873f58002332fb"
+      sha256 "736eec1517c536e71c66194e347937a038b41056b21a79ec75abe56cc1bd22ae"
     end
   end
 
