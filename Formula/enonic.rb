@@ -59,3 +59,5 @@ class Enonic < Formula
     end
   end
 end
+
+disable! date: "2025-11-25", because: "has been replaced by a Homebrew Cask for pre-compiled binaries", replacement: "enonic/cli"
