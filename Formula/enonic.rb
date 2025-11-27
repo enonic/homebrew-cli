@@ -7,6 +7,8 @@ class Enonic < Formula
   homepage "https://enonic.com/"
   version "3.3.1"
 
+  disable! date: "2025-11-25", because: "has been replaced by a Homebrew Cask for pre-compiled binaries", replacement: "enonic/cli"
+
   on_macos do
     if Hardware::CPU.intel?
       url "https://repo.enonic.com/public/com/enonic/cli/enonic/3.3.1/enonic_3.3.1_Darwin_64-bit.tar.gz"
@@ -59,5 +61,3 @@ class Enonic < Formula
     end
   end
 end
-
-disable! date: "2025-11-25", because: "has been replaced by a Homebrew Cask for pre-compiled binaries", replacement: "enonic/cli"
